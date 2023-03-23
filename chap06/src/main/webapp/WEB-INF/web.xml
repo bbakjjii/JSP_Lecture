@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+ 
+ 	<servlet>
+ 		<servlet-name>else</servlet-name>
+ 		<servlet-class>chap06.servlet.DispatcherServlet</servlet-class>
+ 	</servlet>
+ 	
+ 	<!-- servlet-name에 default를 주면 그냥 주소대로 접속하게 두겠다는 의미가 된다 -->
+ 	<!-- resource 밑으로 들어오는 모든 것에 대하여 보여주겠다(?) -->
+ 	<servlet-mapping>
+ 		<servlet-name>default</servlet-name>
+ 		<url-pattern>/resource/*</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet-mapping>
+ 		<servlet-name>else</servlet-name>
+ 		<url-pattern>/</url-pattern>
+ 	</servlet-mapping>
+</web-app>

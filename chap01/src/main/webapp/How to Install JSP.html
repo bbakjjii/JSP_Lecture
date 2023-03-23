@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>How to Install JSP.html</title>
+</head>
+<body>
+
+	<h3>1. Eclipse Enterprise Edition 설치</h3>
+	<ul>
+		<li>Java Edition은 자바만 쓸 수 있다.</li>
+		<li>뒤에 for Web Developers 붙은 것으로 설치</li>
+		<li>[File] → [New] 했을 때 [Dynamic Web Project]가 안보인다면 우측 상단의 [Open Perspective]에서 [Java EE]를 선택</li>
+	</ul>
+
+	<h3>2. Apache Tomcat Web Application Server 설치</h3>
+	<ul>
+		<li>Web Application Server (WAS)</li>
+		<li>9.0으로 설치</li>
+		<li>압축 해제 후 Eclipse의 Servers 탭에 등록할 것</li>
+	</ul>
+
+	<h3>3. 새 프로젝트 생성하기</h3>
+	<ul>
+		<li>[File] → [New] → [Dynamic Web Project]</li>
+		<li>Next 두 번 눌러서 Generate web.xml을 체크 후 프로젝트 생성</li>
+	</ul>
+
+	<h3>4. 해당 프로젝트에 접속하기</h3>
+	<ul>
+		<li>등록한 서버를 우클릭 후 [Add and Remove]에 프로젝트를 등록</li>
+		<li>웹 브라우저를 직접 주소를 입력해 접속할 수 있다<br>
+			(http://localhost:9000/프로젝트명/webapp내부의 경로(=페이지명))
+		</li>
+		<li>포트번호 변경은 등록한 서버의 server.xml을 수정(63번줄 port:"8080" → "9000")</li>
+		<!-- /Servers/Tomcat v9.0 Server at localhost-config/server.xml -->
+		<li>※ 주의 : WEB-INF폴더 밑에 만든 페이지로는 직접 접속의 불가능하다</li>
+	</ul>
+</body>
+</html>

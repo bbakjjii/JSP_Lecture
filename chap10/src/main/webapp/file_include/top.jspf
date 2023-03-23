@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!-- 9 -->   
+	<table border="1">
+		<tr>
+			<th><a href="./main.jsp">홈</a></th>
+			<th><a href="./menu.jsp">메뉴</a></th>
+			<th><a href="./navi.jsp">찾아오는길</a></th>
+			<th><a href="./chains.jsp">체인점</a></th>
+			<th><a href="./sitemap.jsp">사이트맵</a></th>
+		</tr>
+		<tr>
+			<th>
+				<ul>
+					<li>side menu1</li>
+					<li>side menu2</li>
+					<li>side menu3</li>
+					<li>side menu4</li>
+					<li>side menu5</li>
+				</ul>
+			</th>
+			<th colspan="4">

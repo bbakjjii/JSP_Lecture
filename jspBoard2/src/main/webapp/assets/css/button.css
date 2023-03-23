@@ -1,0 +1,17 @@
+
+/* 34 */
+/* a태그인데 btn 클래스인 것들*/
+a.btn{
+	background-color: gray;
+	color:white;
+	text-decoration: none;
+	padding: 5px 7px;
+	display: inline-block;
+	border: solid black 1px;
+	border-radius: 3px;
+}
+
+a.btn:active{
+	background-color: black;
+	color:gray;
+}
